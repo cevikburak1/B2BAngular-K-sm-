@@ -1,0 +1,92 @@
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Ürünün Resimleri</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a routerLink="/admin">Ana Sayfa</a></li>
+              <li class="breadcrumb-item active"><a routerLink="/products"></a>Ürünler</li>
+              <li class="breadcrumb-item active">Ürünün Resimleri </li>     
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Ürünün Resim Listesi </h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="exampleInputFile">Resim Ekle</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input multiple #images type="file" class="custom-file-input" (change)="getImages($event)" id="exampleInputFile">
+                    <label class="custom-file-label" for="exampleInputFile">Resim Seç</label>
+                  </div>
+                  <div class="input-group-append">
+                    <span class="input-group-text a" (click)="uploadImages()">Yükle</span>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3 mt-5" *ngFor="let image of productImages">
+                    <div class="position-relative">
+                      <img src="/assets/img/{{image.imageUrl}}" alt="Resim Yok" class="img-fluid">
+                      <div class="ribbon-wrapper ribbon-lg">
+                        <div class="ribbon bg-danger text-lg a" [swal]="deleteSwal" (confirm)="deleteImage(image)">
+                          Sil
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <button *ngIf="!image.isMainImage" (click)="setMainImage(image.id)" class="btn btn-primary btn-block mt-2">Ana Resim Yap</button>
+                    <button *ngIf="image.isMainImage"  class="btn btn-success btn-block mt-2">Bu Görsel Ana Resimdir</button>
+                  </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+      
+        <!-- /.card-footer-->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+ 
+  <swal 
+  #deleteSwal 
+  title="Sil" 
+  text="Ürünün Seçili  Resmini Silmek İstiyormusunuz"
+  type="question" 
+  [showCancelButton]="true"
+   [focusCancel]="true" 
+   [swalOptions]="{confirmButtonText : 'Sil',cancelButtonText:'Vazgeç' }"
+   >
+
+  </swal>

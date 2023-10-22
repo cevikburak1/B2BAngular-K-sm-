@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Log in (v2)</title>
+
+  <!-- Google Font: Source Sans Pro -->
+
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h1"><b>.NET CORE VE ANGULAR B2B PROJESİ</b></a>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">Giriş Yap Veya Kayıt Ol</p>
+
+      <form #loginForm="ngForm">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" required email placeholder="Email" ngModel name="email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" required placeholder="Password" ngModel name="password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <button type="submit" [disabled]="!loginForm.valid" (click)="login(loginForm.value)" class="btn btn-primary btn-block">Giriş Yap</button>
+      </form>
+
+      
+
+      <p class="mb-1">
+        <a href="forgot-password.html">Şifremi Unuttum</a>
+      </p>
+      
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+
+</body>
+</html>
