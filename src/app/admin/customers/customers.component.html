@@ -64,6 +64,8 @@
                     <th>#</th>
                     <th>Müşteri Adı</th>
                     <th>Email</th>
+                    <th>Fiyat Listesi</th>
+                    <th>İskonto Oranı</th>
                     <th>İşlemler</th>
                 </tr>
 
@@ -75,12 +77,17 @@
                     <td [innerText]="index + 1"></td>
                     <td [innerText]="customer.name"></td>
                     <td [innerText]="customer.email"></td>
+                    <td [innerText]="customer.prticeListName"></td>
+                    <td [innerText]="customer.discount"></td>
                     <td>
-                      <button class="btn btn-danger" [swal]="deleteSwal" (confirm)="delete(customer)">Sil</button>
+                      <button class="btn btn-warning mx-2" [swal]="deleteSwal" (confirm)="delete(customer)">Sil</button>
                       <button class="btn btn-info mx-2" data-bs-toggle="modal" (click)="getCustomer(customer)" data-bs-target="#updateModel">
                          Güncelle 
                       </button>
-                      <button class="btn btn-warning mx-2" data-bs-toggle="modal" (click)="getCustomer(customer)" data-bs-target="#updatePasswordModel">Şifre Güncelle</button>
+                      <button class="btn btn-danger mx-2" data-bs-toggle="modal" (click)="getCustomer(customer)" data-bs-target="#updateRelationshipModel">
+                        Baglantı Ayarla 
+                     </button>
+                      <button class="btn btn-secondary mx-2" data-bs-toggle="modal" (click)="getCustomer(customer)" data-bs-target="#updatePasswordModel">Şifre Güncelle</button>
                          
                    
                     </td>
@@ -175,7 +182,7 @@
             <div class="form-group">
               <label for="exampleInputEmail1">Müşteri Şifresi</label>
               <input type="password" class="form-control" ngModel name="password" #password required>
-              </div>
+            </div>
            
                
           </form>
@@ -187,6 +194,43 @@
       </div>
     </div>
   </div>
+
+
+
+
+  <div class="modal fade" id="updateRelationshipModel" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Müşteri Baglantı  Güncelle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form #updateForm=ngForm>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Fiyat Listesi</label>
+              <select  class="form-control" [(ngModel)]="customer.prticeListId" [ngModelOptions]="{standalone:true}" name="priceListId" #priceListId required>
+                <option [value]="priceList.id" *ngFor="let priceList of priceLists" [innerText]="priceList.name"></option>
+              </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">İskonto</label>
+                <input type="text" class="form-control"  [(ngModel)]="customer.discount" [ngModelOptions]="{standalone:true}" name="discount" #discount required>
+              </div>
+               
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="updateRelationshipModelCloseBtn" data-bs-dismiss="modal">Kapat</button>
+          <button type="button" class="btn btn-info" [disabled]="!updateForm.valid" (click)="updateRelationship()">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
   <swal 
   #deleteSwal 
