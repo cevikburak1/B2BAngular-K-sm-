@@ -6,6 +6,8 @@ import { LoginModule } from './login/login.module';
 import { ProductsModule } from './products/products.module';
 import { PriceListsModule } from './price-lists/price-lists.module';
 import { CustomersModule } from './customers/customers.module';
+import { OrdersComponent } from './orders/orders.component';
+import { OrdersModule } from './orders/orders.module';
 
 
 
@@ -19,7 +21,8 @@ import { CustomersModule } from './customers/customers.module';
     LoginModule,
     ProductsModule,
     PriceListsModule,
-    CustomersModule
+    CustomersModule,
+    OrdersModule
   ],
   exports:[
     HomeModule,
@@ -27,7 +30,8 @@ import { CustomersModule } from './customers/customers.module';
     LoginModule,
     ProductsModule,
     PriceListsModule,
-    CustomersModule     
+    CustomersModule,
+    OrdersModule   
   ]
 })
 export class AdminModule { }
