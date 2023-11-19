@@ -1,7 +1,7 @@
 export class OrderModel{
     id:number;
     customerid:number;
-    customerName:string;
+    customeName:string;
     date:string;
     status:string;
     quantity:number;

@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Fiyat Listesi</h1>
+            <h1>Sipariş Listesi</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -73,8 +73,8 @@
                     <th>#</th>
                     <th>Sipariş Durumu</th>
                     <th>Tarih</th>
-                    <th>Sipariş Numarası</th>
                     <th>Müşteri Adı</th>
+                    <th>Sipariş Numarası</th>
                     <th>Sipariş Adedi</th>
                     <th>Toplam Tutar</th>
                     <th>İşlemler </th>
@@ -88,9 +88,10 @@
                     <td [innerText]="index + 1"></td>
                     <td [innerText]="order.status"></td>
                     <td [innerText]="order.date | date:'dd.MM.yyyy'"></td>
-                    <td [innerText]="order.orderNumber"></td>
+                    <td [innerText]="order.customeName"></td>
                     <td>
-                        <a [innerText]="order.customeName"  routerLink="/admin/orders{{order.id}}"
+                      
+                        <a [innerText]="order.orderNumber"  routerLink="/admin/orders/{{order.id}}"
                         class="btn btn-secondary">
                         </a>
                       </td>

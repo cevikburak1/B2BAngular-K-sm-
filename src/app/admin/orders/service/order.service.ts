@@ -21,8 +21,8 @@ export class OrderService {
     return this.httpClient.get(api);
   }
 
-  getById(id:number){
-    let api = this.apiUrl+"Orders/GetById/" + id;
+   getById(id:number){
+    let api = this.apiUrl+"Orders/GetByIdDto/" + id;
     return this.httpClient.get(api);
   }
 

@@ -10,6 +10,7 @@ import { PriceListsComponent } from './admin/price-lists/price-lists.component';
 import { PriceListDetailsComponent } from './admin/price-lists/price-list-detail/price-list-detail.component';
 import { CustomersComponent } from './admin/customers/customers.component';
 import { OrdersComponent } from './admin/orders/orders.component';
+import { OrderDetailComponent } from './admin/orders/order-detail/order-detail.component';
 
 
 
@@ -81,6 +82,11 @@ const routes: Routes = [
             path:'',
             component:OrdersComponent,
             loadChildren:()=>import('./admin/orders/orders.module').then(m=>m.OrdersModule)
+          },
+          {
+            path:':id',
+            component:OrderDetailComponent,
+            loadChildren:()=>import('./admin/orders/order-detail/order-detail.module').then(m=>m.OrderDetailModule)
           },
           
         ]
