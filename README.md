@@ -1,12 +1,19 @@
- .NET Core Web API ve Angular ile B2B
-Projesi :
-Bu projede, modern web uygulamalarının geliştirilmesinde önemli bir yeri olan .NET Core Web API ve Angular teknolojilerini kullanarak kapsamlı bir web uygulaması geliştirdim. Projenin amacı, .NET Core ile sunucu tarafı işlemlerini yönetirken, Angular ile dinamik ve kullanıcı dostu bir ön yüz oluşturmaktı.
+# B2B Sitesi Projesi
 
-Teknolojiler ve Araçlar
-.NET Core Web API: Sunucu tarafında güvenilir ve performanslı bir yapı sağlamak için tercih edildi. RESTful API prensiplerine uygun olarak geliştirildi ve veri işlemleri için Entity Framework kullanıldı.
-Angular: Modern ve etkileşimli bir kullanıcı arayüzü geliştirmek için seçildi. Proje boyunca Angular'ın çeşitli özelliklerini ve modüllerini kullanarak, dinamik bir web deneyimi oluşturmayı amaçladım.
-Öğrenme Süreci
-Angular ile Tanışma: Proje öncesinde Angular hakkında temel bilgiye sahiptim, ancak bu proje sayesinde Angular'ı derinlemesine öğrenme fırsatı buldum. Özellikle, bileşen tabanlı mimari, servisler, ve reaktif formlar konusunda yoğun bir çalışma gerçekleştirdim.
-Pratik Uygulama: Angular öğrenme sürecim, proje gereksinimlerine uygun olarak ilerledi. Her yeni öğrendiğim konsepti doğrudan projeye uygulayarak, teorik bilgilerimi pratikle pekiştirdim.
-Sonuç ve Deneyimler
-Bu proje, .NET Core Web API ve Angular teknolojilerini kullanarak gelişmiş bir web uygulaması geliştirmek için harika bir öğrenme deneyimi sundu. Hem back-end hem de front-end geliştirmede kazandığım tecrübeler, benim için değerli ve unutulmaz oldu. Projem, modern web geliştirmenin temel taşlarını kapsamlı bir şekilde anlamamı sağladı.
+## Projem Hakkında
+Bu projede, ASP.NET Core WebAPI ve Angular kullanarak bir B2B (Business-to-Business) sitesi geliştirdim. Bu platform, işletmeler arası işlemleri ve etkileşimleri dijitalleştiren ve kolaylaştıran bir çözüm sunuyor.
+
+## Teknolojiler ve Araçlar
+- **ASP.NET Core WebAPI:** RESTful API tasarımı, veri yönetimi ve iş mantığı işlemleri için.
+- **Angular:** Kullanıcı arayüzü için dinamik ve etkileşimli bir çerçeve.
+- **Entity Framework Core:** Veritabanı işlemleri ve ORM (Object-Relational Mapping) için.
+- Diğer kullanılan kütüphaneler ve araçlar: [Swagger/OpenAPI, JWT, AutoMapper, Serilog, vs.]
+
+## Geliştirme Sürecim
+1. **Tasarım ve Planlama:** İş gereksinimleri, sistem mimarisi ve kullanıcı deneyimi.
+2. **Kodlama ve Uygulama:** Modüler kod yapısı, performans ve güvenlik odaklı geliştirme.
+3. **Test ve Hata Ayıklama:** Birim ve entegrasyon testleri, hata ayıklama ve iyileştirmeler.
+4. **Dağıtım ve Bakım:** Uygulamanın yayına alınması ve sürekli bakımı.
+
+## Sonuç
+Projeyi başarıyla tamamladım ve bu süreçte, işletmelerin ihtiyaçlarını karşılayan etkili bir B2B platformu oluşturdum. Projede edindiğim deneyimler, iş dünyasına yönelik web uygulamaları geliştirmede benim için değerli oldu.
