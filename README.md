@@ -1,27 +1,12 @@
-# BusinessToBusiness
+ .NET Core Web API ve Angular ile B2B
+Projesi 
+Bu projede, modern web uygulamalarının geliştirilmesinde önemli bir yeri olan .NET Core Web API ve Angular teknolojilerini kullanarak kapsamlı bir web uygulaması geliştirdim. Projenin amacı, .NET Core ile sunucu tarafı işlemlerini yönetirken, Angular ile dinamik ve kullanıcı dostu bir ön yüz oluşturmaktı.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Teknolojiler ve Araçlar
+.NET Core Web API: Sunucu tarafında güvenilir ve performanslı bir yapı sağlamak için tercih edildi. RESTful API prensiplerine uygun olarak geliştirildi ve veri işlemleri için Entity Framework kullanıldı.
+Angular: Modern ve etkileşimli bir kullanıcı arayüzü geliştirmek için seçildi. Proje boyunca Angular'ın çeşitli özelliklerini ve modüllerini kullanarak, dinamik bir web deneyimi oluşturmayı amaçladım.
+Öğrenme Süreci
+Angular ile Tanışma: Proje öncesinde Angular hakkında temel bilgiye sahiptim, ancak bu proje sayesinde Angular'ı derinlemesine öğrenme fırsatı buldum. Özellikle, bileşen tabanlı mimari, servisler, ve reaktif formlar konusunda yoğun bir çalışma gerçekleştirdim.
+Pratik Uygulama: Angular öğrenme sürecim, proje gereksinimlerine uygun olarak ilerledi. Her yeni öğrendiğim konsepti doğrudan projeye uygulayarak, teorik bilgilerimi pratikle pekiştirdim.
+Sonuç ve Deneyimler
+Bu proje, .NET Core Web API ve Angular teknolojilerini kullanarak gelişmiş bir web uygulaması geliştirmek için harika bir öğrenme deneyimi sundu. Hem back-end hem de front-end geliştirmede kazandığım tecrübeler, benim için değerli ve unutulmaz oldu. Projem, modern web geliştirmenin temel taşlarını kapsamlı bir şekilde anlamamı sağladı.
