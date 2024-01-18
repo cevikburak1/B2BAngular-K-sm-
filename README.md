@@ -1,5 +1,5 @@
  .NET Core Web API ve Angular ile B2B
-Projesi 
+Projesi :
 Bu projede, modern web uygulamalarının geliştirilmesinde önemli bir yeri olan .NET Core Web API ve Angular teknolojilerini kullanarak kapsamlı bir web uygulaması geliştirdim. Projenin amacı, .NET Core ile sunucu tarafı işlemlerini yönetirken, Angular ile dinamik ve kullanıcı dostu bir ön yüz oluşturmaktı.
 
 Teknolojiler ve Araçlar
